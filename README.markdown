@@ -25,6 +25,7 @@ Use the ``data-src`` on your container element to tell backscratch the basename 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="jquery.backstretch.min.js"></script>
+    <script src="jquery.backscratch.min.js"></script>
     <script>
 
       // Call backscratch with the image size options you want to use

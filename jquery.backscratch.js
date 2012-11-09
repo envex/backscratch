@@ -2,9 +2,15 @@
 
   $.fn.backscratch = function(available){
 
-      var win = $(window),
-          body = $('body'),
-          $bg  = this.find('img.bg');
+    // Check to see if backstretch has been included
+    if ($.backstretch === undefined ){
+      console.log('You need Backstretch!');
+      return;
+    }
+
+    var win = $(window),
+        body = $('body'),
+        $bg  = this.find('img.bg');
 
     $bg.hide();
 
