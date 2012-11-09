@@ -27,7 +27,7 @@ Small window = smaller image. Smaller image = faster loading.
 
 - Call backscratch with any sizes you'd like
 
-  $(".backscratch").backscratch([1024, 1280, 1366]);
+`` $(".backscratch").backscratch([1024, 1280, 1366]); ``
 
 ### Links & Thanks
 
