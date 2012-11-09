@@ -13,11 +13,11 @@ Small window = smaller image. Smaller image = faster loading.
 
 ## Usage
 
-- Get [Backstretch](http://srobbin.com/jquery-plugins/backstretch/)
+Get [Backstretch](http://srobbin.com/jquery-plugins/backstretch/)
 
-- Add backscratch to your page
+Add backscratch to your page
 
-- Create the container element, add the .backscratch class your shim
+Create the container element, add the .backscratch class your shim
 
     <div id="slider" class="backscratch">
 
@@ -25,7 +25,7 @@ Small window = smaller image. Smaller image = faster loading.
 
     </div> <!-- header -->
 
-- Call backscratch with any sizes you'd like
+Call backscratch with any sizes you'd like
 
 `` $(".backscratch").backscratch([1024, 1280, 1366]); ``
 
