@@ -11,6 +11,11 @@ Small window = smaller image. Smaller image = faster loading.
 
 [Demo](http://facetdev.com/demos/backscratch/)
 
+### Disclaimer
+
+Right now, backscratch will only work on elements and not the entire window like [Backstretch](http://srobbin.com/jquery-plugins/backstretch/) does.
+That functionality is planned.
+
 ## Usage
 
 Include [jQuery](http://jquery.com), [Backstretch](http://srobbin.com/jquery-plugins/backstretch/) and Backscratch on your page.
