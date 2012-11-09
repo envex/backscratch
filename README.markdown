@@ -13,21 +13,32 @@ Small window = smaller image. Smaller image = faster loading.
 
 ## Usage
 
-Get [Backstretch](http://srobbin.com/jquery-plugins/backstretch/)
+Include [jQuery](http://jquery.com), [Backstretch](http://srobbin.com/jquery-plugins/backstretch/) and Backscratch on your page.
 
-Add backscratch to your page
+Use the ``data-src`` on your container element to tell backscratch the basename of the images you've created.
 
-Create the container element, add the .backscratch class your shim
+    <div class="backscratch">
 
-    <div id="slider" class="backscratch">
-
-      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="bg" />
+      <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" class="bg" data-src="/path/to/your/image.jpg" />
 
     </div> <!-- header -->
 
-Call backscratch with any sizes you'd like
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="jquery.backstretch.min.js"></script>
+    <script>
 
-`` $(".backscratch").backscratch([1024, 1280, 1366]); ``
+      // Call backscratch with the image size options you want to use
+      $(".backscratch").backscratch([1024, 1280, 1366]);
+
+      /**
+       * Ideally, you've created images with the following names
+       *
+       * image_1024.jpg
+       * image_1280.jpg
+       * image_1366.jpg
+       */
+
+    </script>
 
 ### Links & Thanks
 

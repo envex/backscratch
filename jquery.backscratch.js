@@ -26,12 +26,13 @@
 
         $bg.each(function(){
 
-          var $this = $(this);
+          var $this = $(this),
+              image = $this.data('src'),
+              image_info = image.split('.');
 
           body.attr('data-backscratch-size', chosen);
 
-          // $this.parent('.backscratch').backstretch(image_info[0] + '_' + chosen + '.' + image_info[1]);
-          $.backstretch('http://placehold.it/' + chosen + 'x' + chosen + '.jpg');
+          $this.parent('.backscratch').backstretch(image_info[0] + '_' + chosen + '.' + image_info[1]);
 
         });
         
