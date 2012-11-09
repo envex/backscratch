@@ -9,7 +9,7 @@ that best matches that window size.
 
 Small window = smaller image. Smaller image = faster loading.
 
-[Demo](http://facetdev.com/demos/backstretch)
+[Demo](http://facetdev.com/demos/backscratch/)
 
 ## Usage
 
