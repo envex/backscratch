@@ -3,8 +3,8 @@
 Backscratch is a jQuery plugin that serves up better image sizes
 when using [Backstretch](http://srobbin.com/jquery-plugins/backstretch/)
 
-It's based on the technique from [CSS Tricks](http://css-tricks.com/perfect-full-page-background-image/) that uses
-a shim to load an image and then, based on the browser size, loads up an image
+It's based on the technique from [CSS Tricks](http://css-tricks.com/perfect-full-page-background-image/) 
+that uses a shim to load an image and then, based on the browser size, loads up an image
 that best matches that window size.
 
 Small window = smaller image. Smaller image = faster loading.
