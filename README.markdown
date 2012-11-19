@@ -48,6 +48,19 @@ Use the ``data-src`` on your container element to tell backscratch the basename 
 </script>
 ```
 
+### Using Backscratch as a background
+
+Instead of attaching Backscratch to an element on the page, you can attach it to the
+background of the page by omitting the element on the backscratch function call.
+
+```html
+<script>
+  
+  $.backscratch([1024, 1280, 1366]);
+
+</script>
+```
+
 ### Links & Thanks
 
 - [CSS Tricks](http://css-tricks.com/perfect-full-page-background-image/)

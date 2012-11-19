@@ -11,7 +11,9 @@
  * 
  */
 
-(function( $ ){
+;(function ($, window, undefined) {
+
+  'use strict';
 
   $.fn.backscratch = function(available){
 
@@ -23,7 +25,16 @@
 
     var win = $(window),
         body = $('body'),
-        $bg  = this.find('img.bg');
+        $bg  = this.find('img.bg'),
+        is_body = this.is('body');
+
+    // Do we have an image?
+    if(!$bg.length){
+
+      console.log('You forgot to add an image');
+      return;
+
+    }
 
     // Hide the initial image
     $bg.hide();
@@ -59,8 +70,22 @@
           // Add the current size to the body for reference
           body.attr('data-backscratch-size', chosen);
 
-          // Setup/Reload backstrech on all elements
-          $this.parent('.backscratch').backstretch(image_info[0] + '_' + chosen + '.' + image_info[1]);
+          /**
+           * If we're adding the backstrech to the body
+           * element we need to call it differently.
+           *
+           * This is that check
+           */
+          
+          if(is_body){
+
+            $.backstretch(image_info[0] + '_' + chosen + '.' + image_info[1]);
+
+          }else{
+
+            $this.parent('.backscratch').backstretch(image_info[0] + '_' + chosen + '.' + image_info[1]);
+
+          }
 
         });
         
@@ -70,4 +95,11 @@
 
   }
 
-})( jQuery );
+  // Attach to the body if no element is given
+  $.backscratch = function (available) {
+
+    return $('body').backscratch(available);
+
+  };
+
+})( jQuery, window );
