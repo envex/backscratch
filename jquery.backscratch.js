@@ -8,7 +8,7 @@
  * @copyright  2012
  * @license    Do what you want -- Just don't resell
  * @version    1.0
- * 
+ *
  */
 
 ;(function ($, window, undefined) {
@@ -93,7 +93,7 @@
       
     }).resize();
 
-  }
+  };
 
   // Attach to the body if no element is given
   $.backscratch = function (available) {
