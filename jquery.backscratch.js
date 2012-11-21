@@ -64,7 +64,7 @@
         $bg.each(function(){
 
           var $this = $(this),
-              image = $this.data('src'),
+              image = $this.data('src').replace(/^.*\/\/[^\/]+/, ''),
               image_info = image.split('.');
 
           // Add the current size to the body for reference
